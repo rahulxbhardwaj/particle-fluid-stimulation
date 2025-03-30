@@ -1,0 +1,22 @@
+For Wiring and to Make it Work:
+
+Hardware Requirement : - 
+    ESP32 dev Module (34 gpio Variant)
+    Jumper Wires
+    BreadBaord(Optional but recommended)
+    MPU-6050 Sensor (for accelerator and gyro sensing)
+
+
+Connections :-
+    MPU-6050:
+        VCC -> ESP32 3.3V
+        GND -> ESP32 GND
+        SCL -> P26
+        SDA -> P33
+
+Changes In the Arundio Code File 
+    Put your Wifi SSid and Password . Make Sure you use 2.4 Ghz wifi as esp32 only support 2.4 ghz wifi .
+    Next check your PC/Laptop Ip address using ipconfig in cmd . (ipV4)
+    Put in esp32Code on line const char* udpAddress = "192.168.0.197"; (Update as per your Ip Address).
+
+Now Simply Install the Requirement Libraries and Turn on the Hardware and Open the Python File
